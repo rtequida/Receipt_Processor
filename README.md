@@ -14,6 +14,7 @@ Endpoints included in this API are:
 ### Deploying
 Run the project
 ```go run .```
+
 From here you can send payloads using an API testing suite such as Postman. I've included a Postman collection you can import to easily setup the calls and have a payload ready to go.
 ![postman screenshot](Images/postman_screenshot.png)
 Or use a curl command
