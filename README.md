@@ -26,7 +26,7 @@ Breakdown of API endpoints and how to hit them can be found in this [section](#a
 I've provided unit tests that test the functions within the ```app``` and ```handlers``` packages.
 To run all tests 
 ```
-go run ./...
+go test ./...
 ```
 To run a specific test, simply ```cd``` into the appropriate folder and ```go test```
 ```
