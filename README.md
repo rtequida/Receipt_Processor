@@ -42,6 +42,16 @@ ok      github.com/rtequida/Receipt_Processor/handlers  0.210s
 You can also include the verbose tag ```-v``` to get a more detailed breakdown of the tests
 ```
 go test -v
+
+partial output:
+=== RUN   TestGetPoints
+--- PASS: TestGetPoints (0.00s)
+=== RUN   TestValidateReceipt
+--- PASS: TestValidateReceipt (0.00s)
+=== RUN   TestValidateID
+--- PASS: TestValidateID (0.00s)
+PASS
+ok      github.com/rtequida/Receipt_Processor/app       0.163s
 ```
 ### API Endpoint Breakdown
 #### Process Receipts
