@@ -12,8 +12,7 @@ Endpoints included in this API are:
 - [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen) - Optional - used to generate the server-side code for the API. See [api readme](api/README.md)
 
 ### Deploying
-Run the project
-```go run .```
+Run the project ```go run .``` in the root directory.
 
 From here you can send payloads using an API testing suite such as Postman. I've included a Postman collection you can import to easily setup the calls and have a payload ready to go.
 ![postman screenshot](Images/postman_screenshot.png)
