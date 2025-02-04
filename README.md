@@ -32,6 +32,12 @@ To run a specific test, simply ```cd``` into the appropriate folder and ```go te
 ```
 cd /app
 go test
+
+output:
+?       github.com/rtequida/Receipt_Processor   [no test files]
+?       github.com/rtequida/Receipt_Processor/api       [no test files]
+ok      github.com/rtequida/Receipt_Processor/app       (cached)
+ok      github.com/rtequida/Receipt_Processor/handlers  0.210s
 ```
 You can also include the verbose tag ```-v``` to get a more detailed breakdown of the tests
 ```
