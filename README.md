@@ -20,7 +20,7 @@ Or use a curl command
 ```
 curl -X GET http://localhost:8080/receipts/{id}/points
 ```
-Breakdown of API endpoints and how to hit them can be found in this [section](#-api-endpoint-breakdown)
+Breakdown of API endpoints and how to hit them can be found in this [section](#api-endpoint-breakdown)
 
 ### Running Tests
 I've provided unit tests that test the functions within the ```app``` and ```handlers``` packages.
