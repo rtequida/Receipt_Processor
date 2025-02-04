@@ -44,15 +44,24 @@ func TestPostReceiptsProcess(t *testing.T) {
 	}`
 
 	t.Run("Valid Receipt", func(t *testing.T) {
+		// Creating a new mock request to be sent to the echo server
 		req := httptest.NewRequest(http.MethodPost, "/receipts/process", strings.NewReader(JSON_Receipt_Valid))
+		// Mocking the headers of the request
 		req.Header.Set(echo.HeaderContentType, echo.MIMEApplicationJSON)
+		// A mock response recorder to handle the response from the handler
 		rec := httptest.NewRecorder()
+		// Creating a new context for echo
 		ctx := e.NewContext(req, rec)
+		// Calls the POST handler and records response to rec
 		err := handler.PostReceiptsProcess(ctx)
+		// Makes sure the response had no errors
 		assert.NoError(t, err)
+		// Make sure the response has the correct status code
 		assert.Equal(t, http.StatusOK, rec.Code)
 		var response map[string]string
+		// Creates a go map from the JSON response
 		json.Unmarshal(rec.Body.Bytes(), &response)
+		// Make sure the id field is included in the response
 		assert.Contains(t, response, "id")
 	})
 
