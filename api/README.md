@@ -1,7 +1,7 @@
 
 # OpenAPI codegen Server Creation
 
-**Install oapi-codegen** - Run this command to install the library. We will use this library to auto-generate the server-side code of the API from the openapi.yml file.
+**Install oapi-codegen** - Run this command to install the library. I used this library to auto-generate the server-side code of the API from the openapi.yml file and is only necessary if you want to update the API by updating the openapi.yml and running the command below to generate new server-side code.
 ```
 go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
 ```
