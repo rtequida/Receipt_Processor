@@ -9,7 +9,9 @@ Endpoints included in this API are:
 ## Getting Started
 ### Prerequisites
 - [Go](https://go.dev/doc/install) - The language used
-- [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen) - Optional - used to generate the server-side code for the API. See [api readme](api/README.md)
+
+### Additional Libraries Used
+- [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen) - used to generate the server-side code for the API. This is only necessary if you want to make updates to the API through the openapi.yml file and need to run codegen again to regenerate the server-side code. See [api readme](api/README.md)
 
 ### Deploying
 Run the project ```go run .``` in the root directory.
