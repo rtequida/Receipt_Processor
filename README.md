@@ -9,6 +9,7 @@ Endpoints included in this API are:
 ## Getting Started
 ### Prerequisites
 - [Go](https://go.dev/doc/install) - The language used
+- [Postman](https://www.postman.com/downloads/) - optional if you want to use an API testing suite
 
 ### Additional Libraries Used
 - [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen) - used to generate the server-side code for the API. This is only necessary if you want to make updates to the API through the openapi.yml file and need to run codegen again to regenerate the server-side code. See [api readme](api/README.md)
