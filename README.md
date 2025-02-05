@@ -31,10 +31,9 @@ To run all tests
 ```
 go test ./...
 ```
-To run a specific test, simply ```cd``` into the appropriate folder and ```go test```
+To run a specific test, simply by specifying the package you want to test
 ```
-cd /app
-go test
+go test ./app
 
 output:
 ?       github.com/rtequida/Receipt_Processor   [no test files]
@@ -44,7 +43,7 @@ ok      github.com/rtequida/Receipt_Processor/handlers  0.210s
 ```
 You can also include the verbose tag ```-v``` to get a more detailed breakdown of the tests
 ```
-go test -v
+go test ./app -v
 
 partial output:
 === RUN   TestGetPoints
